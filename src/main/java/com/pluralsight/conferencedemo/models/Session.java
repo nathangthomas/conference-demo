@@ -15,7 +15,7 @@ public class Session {
 
     @ManyToMany
     @JoinTable(
-            name = "session_speakers"
+            name = "session_speakers",
             joinColumns = @JoinColumn(name = "session_id"),
             inverseJoinColumns = @JoinColumn(name = "speaker_id")
     )
